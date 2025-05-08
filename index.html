@@ -110,12 +110,7 @@
       padding-left: 25px;
     }
 
-    ul li::before {
-      content: "➤";
-      position: absolute;
-      left: 0;
-      color: #00bfff;
-    }
+   
 
     /* Gallery */
     .gallery-img {
@@ -159,7 +154,12 @@
     .contact-link:hover {
       color: #00ffff;
     }
-
+  
+    .log{
+      width: 75%;
+      height: 75px;
+      border-radius: 50%;
+    }
     /* Responsive */
     @media (max-width: 768px) {
       .hero h1 {
@@ -170,6 +170,19 @@
         font-size: 1.5rem;
       }
     }
+    @media screen and (max-width: 600px) {
+      ul li::before {
+      content: "➤";
+      position: absolute;
+      left: 0;
+      color: #00bfff;
+    }
+    .log{
+      width: 75%;
+      height: 75px;
+      border-radius: 50%;
+    }
+    }
   </style>
 </head>
 <body>
@@ -178,7 +191,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="images/CMC.png" alt="CMC Logo" height="30" class="mr-2"> Code Matrix
+      <img src="images/CMC.png" alt="CMC Logo" height="30" class="mr-2 log"> Code Matrix Contest
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
@@ -221,7 +234,7 @@
     <ul>
       <li>Registration Deadline: May 11</li>
       <li>Contest Date: May 12</li>
-      <li>Results Announcement: May 14</li>
+      <li>Results Announcement: May 12</li>
     </ul>
   </div>
 </section>
@@ -249,7 +262,7 @@
   <div class="container text-center">
     <h2>Register Now</h2>
     <p>Click the button below to register for the contest.</p>
-    <a href="#" class="btn btn-primary">Register</a>
+    <a href="https://forms.cloud.microsoft/r/znqZV6Z8Mb" class="btn btn-primary">Register</a>
   </div>
 </section>
 
